@@ -1,0 +1,45 @@
+{
+  "name": "json-schema-2-groovy-pojo",
+  "version": "0.0.1",
+  "description": "This generates groovy pojos from json-schema, this is part of raml2code project",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gextech/json-schema-2-groovy-pojo.git"
+  },
+  "keywords": [
+    "JSON-SCHEMA",
+    "CODEGEN"
+  ],
+  "author": "Tomas S.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gextech/json-schema-2-groovy-pojo/issues"
+  },
+  "homepage":
+
+  "https://github.com/gextech/raml2code",
+  "dependencies": {
+    "lodash": "2.4.1",
+    "json-schema-java-mapper-utils" : "0.0.1",
+    "handlebars": "~2.0.0-alpha.4",
+    "deref": "0.2.6"
+  },
+  "devDependencies": {
+    "gulp-util": "3.0.1",
+    "chai": "^1.10.0",
+    "del": "^1.1.1",
+    "gulp": "^3.8.10",
+    "glob": "^4.3.5",
+    "gulp-coffee": "2.2.0",
+    "gulp-jasmine": "^1.0.1",
+    "gulp-mocha": "2.0.0",
+    "mocha": "^2.0.1",
+    "run-sequence": "^1.0.2",
+    "data2code": "0.0.4"
+  }
+}
+

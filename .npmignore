@@ -1,0 +1,5 @@
+examples
+.idea/
+json-schema-parser-util.iml
+test
+.gitignore
