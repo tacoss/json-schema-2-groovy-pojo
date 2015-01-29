@@ -38,7 +38,7 @@ generator.parser = (data) ->
     model.classMembers = parsedClass.classMembers
     model.innerClasses = parsedClass.innerClasses
     model.className = parsedClass.className
-    model.classDescription = parsedClass.className
+    model.classDescription = parsedClass.classDescription
 
     model.extra = data.extra
     if model.classMembers.length > 0
