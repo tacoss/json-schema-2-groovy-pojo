@@ -2,8 +2,8 @@ package org.gex.v1
 import groovy.transform.*
 import javax.validation.constraints.*
 /**
-*A cat from Atoms catalog
-**/
+ *A cat from Atoms catalog
+ **/
 @CompileStatic
 @Canonical
 public class Cat implements Serializable {
@@ -46,11 +46,19 @@ public class Cat implements Serializable {
   @NotNull
   List<Error> errors
 
-}
+  static class Food implements Serializable {
 
-class Food implements Serializable {
+    /* what the cat eats */
+    String name
 
-  /* what the cat eats */
-  String name
+    /* Something nested to eat */
+    Description description
 
+    static class Description implements Serializable {
+
+      /* what the cat eats */
+      String name
+
+    }
+  }
 }

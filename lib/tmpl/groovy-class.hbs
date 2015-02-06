@@ -1,6 +1,6 @@
 package {{extra.package}}
 import groovy.transform.*{{#if extra.enableAnnotations}}
-  import javax.validation.constraints.*{{/if}}
+import javax.validation.constraints.*{{/if}}
 {{#if classDescription}}
   /**
   *{{{classDescription}}}
@@ -9,10 +9,5 @@ import groovy.transform.*{{#if extra.enableAnnotations}}
 @Canonical
 public class {{{className}}} implements Serializable {
 {{>classMembers}}
+{{>innerClass}}
 }
-
-{{#innerClasses}}
-  class {{{className}}} implements Serializable {
-  {{>classMembers}}
-  }
-{{/innerClasses}}

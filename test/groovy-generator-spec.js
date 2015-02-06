@@ -98,7 +98,7 @@ describe('should generate something', function () {
 
   it("should generate a POJO with property ref", function(done){
     var test = function(err, schemas, done){
-      generator.handleRender = handleRender.bind(undefined, done, "WidgetInlineProperty.groovy", "v1/WidgetInlineProperty.groovy", false);
+      generator.handleRender = handleRender.bind(undefined, done, "WidgetInlineProperty.groovy", "v1/WidgetInlineProperty.groovy", true);
       var data = {
         schemas: schemas,
         version: "v1",

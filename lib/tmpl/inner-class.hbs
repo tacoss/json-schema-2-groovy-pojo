@@ -1,0 +1,8 @@
+{{#innerClasses}}
+  {{#if className}}
+  static class {{{className}}} implements Serializable {
+    {{>classMembers}}
+    {{>innerClass}}
+  }
+  {{/if}}
+{{/innerClasses}}
