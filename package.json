@@ -22,7 +22,7 @@
   "homepage": "https://github.com/gextech/json-schema-2-groovy-pojo",
   "dependencies": {
     "lodash": "2.4.1",
-    "json-schema-java-mapper-utils" : "0.0.5",
+    "json-schema-java-mapper-utils" : "0.0.6",
     "handlebars": "~2.0.0-alpha.4",
     "deref": "0.2.6"
   },
