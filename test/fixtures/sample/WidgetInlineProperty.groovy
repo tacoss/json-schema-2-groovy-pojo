@@ -2,8 +2,8 @@ package org.gex.v1
 import groovy.transform.*
 import javax.validation.constraints.*
 /**
-*A widget is used to generated partials
-**/
+ *A widget is used to generated partials
+ **/
 @CompileStatic
 @Canonical
 public class WidgetInlineProperty implements Serializable {
@@ -15,50 +15,49 @@ public class WidgetInlineProperty implements Serializable {
   /* Inner properties */
   Composite composite
 
-  
+
   Zid zid
 
 
   String otherColor
 
-}
+  static class Composite implements Serializable {
 
-class Composite implements Serializable {
+    /* The unique identifier of the widget  */
+    String xid
 
-  /* The unique identifier of the widget  */
-  String xid
+    /* The friendly name of the widget  */
+    String name
 
-  /* The friendly name of the widget  */
-  String name
+    /* Common set of keywords to categorize widgets */
+    List<String> tags
 
-  /* Common set of keywords to categorize widgets */
-  List tags
+    /* The version of the Widget  */
+    String groupId
 
-  /* The version of the Widget  */
-  String groupId
+    /* The version of the Widget  */
+    String artifactId
 
-  /* The version of the Widget  */
-  String artifactId
+    /* The version of the Widget  */
+    String revision
 
-  /* The version of the Widget  */
-  String revision
+    /* The description of the Widget  */
+    String description
 
-  /* The description of the Widget  */
-  String description
+  }
+  static class Zid implements Serializable {
 
-}
-class Zid implements Serializable {
+    /* The unique identifier of the widget  */
+    String xid
 
-  /* The unique identifier of the widget  */
-  String xid
+    /* The friendly name of the widget  */
+    String colour
 
-  /* The friendly name of the widget  */
-  String colour
+    /* The version of the Widget  */
+    String ipsum
 
-  /* The version of the Widget  */
-  String ipsum
+    /* The description of the Widget  */
+    String lorem
 
-  /* The description of the Widget  */
-  String lorem
-
+  }
 }
