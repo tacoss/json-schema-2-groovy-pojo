@@ -37,7 +37,8 @@
     "gulp-mocha": "2.0.0",
     "mocha": "^2.0.1",
     "run-sequence": "^1.0.2",
-    "data2code": "0.0.4"
+    "data2code": "0.0.4",
+    "raml2code-fixtures": "0.0.1"
   }
 }
 
