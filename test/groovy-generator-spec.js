@@ -1,4 +1,5 @@
 'use strict';
+var testRun = require("raml2code-fixtures").loadSchemasAndRun;
 var generator = require('../lib/pojo');
 var chai = require('chai');
 var _ = require('lodash');
@@ -20,7 +21,7 @@ describe('should generate something', function () {
       data2Code.process(data, generator);
       done();
     };
-    testUtils.loadSchemasAndRun(test,done)
+    testRun(test,done)
 
   });
 
