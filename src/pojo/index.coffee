@@ -4,10 +4,10 @@ mapProperties = require("json-schema-java-mapper-utils").mapProperties
 
 generator = {}
 #generator.helpers = commonHelpers
-generator.template = require("../../tmpl/groovy-class.hbs")
+generator.template = require("../tmpl/groovy-class.hbs")
 generator.partials = {
-  classMembers : require("../../tmpl/class-members-partial.hbs"),
-  innerClass : require("../../tmpl/inner-class.hbs")
+  classMembers : require("../tmpl/class-members-partial.hbs"),
+  innerClass : require("../tmpl/inner-class.hbs")
 }
 
 deref = require('deref')();
