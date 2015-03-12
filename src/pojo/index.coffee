@@ -4,7 +4,7 @@ mapProperties = require("json-schema-java-mapper-utils").mapProperties
 
 generator = {}
 #generator.helpers = commonHelpers
-generator.template = require("../tmpl/groovy-class.hbs")
+generator.template = {'{{fileName}}': require("../tmpl/groovy-class.hbs")}
 generator.partials = {
   classMembers : require("../tmpl/class-members-partial.hbs"),
   innerClass : require("../tmpl/inner-class.hbs")
@@ -43,10 +43,9 @@ generator.parser = (data) ->
 
     model.extra = data.extra
     if model.classMembers.length > 0
-      result = {}
       version =  if data.version then "#{data.version}/"  else ""
-      result["#{version}#{model.className}.groovy"] = model
-      parsed.push result
+      model.fileName = "#{version}#{model.className}.groovy"
+      parsed.push model
     else
       #if there is not properties it must be a Map maps are not created
       console.log "WARN: ----> #{model.className}.groovy is too abstract to create a file using List or Map"

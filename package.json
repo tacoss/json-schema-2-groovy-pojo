@@ -1,6 +1,6 @@
 {
   "name": "json-schema-2-groovy-pojo",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "This generates groovy pojos from json-schema, this is part of raml2code project",
   "main": "lib/pojo/index.js",
   "scripts": {
@@ -37,8 +37,8 @@
     "glob": "^4.3.5",
     "mocha": "^2.0.1",
     "run-sequence": "^1.0.2",
-    "data2code": "0.0.4",
-    "raml2code-fixtures": "0.0.6"
+    "data2code": "0.0.7",
+    "raml2code-fixtures": "0.0.11"
   }
 }
 
